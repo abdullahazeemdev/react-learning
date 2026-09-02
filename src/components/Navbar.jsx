@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     return (
         <nav className="bg-white shadow-md">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-16">
 
                     {/* Logo / Brand */}
                     <div className="flex items-center">
-                        <span className="text-xl font-bold text-indigo-600">MyBrand</span>
+                        <span className="text-xl font-bold text-indigo-600">Navbar</span>
                     </div>
 
                     {/* Menu Links (Yeh desktop aur mobile dono par dikhenge kyunki JS logic nahi hai) */}

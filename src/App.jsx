@@ -43,13 +43,16 @@ import Contact from './pages/Contact'
 import User from './pages/User'
 import Profile from './pages/Profile'
 import Settings from './pages/Settings'
+import Dashbaord from './pages/Dashboard'
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}>
-          < Route path='user' element={<User />} />
+         < Route index element={<Dashbaord />} />
+          < Route path='user' element={<User />}/>
+          <Route path='user/:id' element={<User/>}/>
           < Route path='profile' element={<Profile />} />
           < Route path='settings' element={<Settings />} />
         </Route>
