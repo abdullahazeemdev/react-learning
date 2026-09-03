@@ -42,6 +42,17 @@ const Home = () => {
               Settings
             </NavLink>
           </li>
+
+          <li>
+            <NavLink
+              to="/counter"
+              className={({ isActive }) => `hover:bg-amber-700 p-2.5 rounded-lg cursor-pointer transition-all font-medium flex ${isActive ? 'bg-white text-amber-800' : 'hover:bg-amber-700'
+                }`
+              }
+            >
+              Counter
+            </NavLink>
+          </li>
         </ul>
 
         {/* Child pages yahan render hongi */}

@@ -44,6 +44,7 @@ import User from './pages/User'
 import Profile from './pages/Profile'
 import Settings from './pages/Settings'
 import Dashbaord from './pages/Dashboard'
+import Counter from './pages/Counter'
 
 const App = () => {
   return (
@@ -55,6 +56,7 @@ const App = () => {
           <Route path='user/:id' element={<User/>}/>
           < Route path='profile' element={<Profile />} />
           < Route path='settings' element={<Settings />} />
+          < Route path='counter' element={<Counter/>}/>
         </Route>
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
